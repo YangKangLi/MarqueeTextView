@@ -27,10 +27,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setShortText1(View view) {
-        tvMarquee.setText("这是很端的文本1");
+        tvMarquee.setText("这是很短的文本1");
     }
 
     public void setShortText2(View view) {
-        tvMarquee.setText("这是很端的文本2");
+        tvMarquee.setText("这是很短的文本2");
     }
 }
