@@ -43,6 +43,6 @@ Step 3. Use MarqueeTextView Widget like :
         app:marquee_move_step="5" />
 ```
 There are 3 arrtrbutes here:
-1) marquee_first_hold_time : it means that text will hold for a while before scrooll
-2) marquee_margin_between: coming soon
-3) marquee_move_step: coming soon
+1) marquee_first_hold_time (unit:millisecond) : text will hold for a while before scrooll
+2) marquee_margin_between: space between tail and head
+3) marquee_move_step: The distance moved each time
