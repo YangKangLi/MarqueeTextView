@@ -1,6 +1,6 @@
 # MarqueeTextView
 
-![Platform](https://img.shields.io/badge/platform-Android-blue.svg)![Release](https://img.shields.io/badge/release-1.0-blue.svg)![Gradle](https://img.shields.io/badge/gradle-3.5.3-blue.svg)![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Android-blue.svg)  ![Release](https://img.shields.io/badge/release-1.0-blue.svg)  ![Gradle](https://img.shields.io/badge/gradle-3.5.3-blue.svg)  ![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)
 =====
 
 Description
