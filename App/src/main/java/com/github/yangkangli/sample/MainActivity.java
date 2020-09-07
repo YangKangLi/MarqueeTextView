@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setLongText2(View view) {
-        tvMarquee.setText("这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2");
+        tvMarquee.setText("这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2");
     }
 
     public void setShortText1(View view) {
