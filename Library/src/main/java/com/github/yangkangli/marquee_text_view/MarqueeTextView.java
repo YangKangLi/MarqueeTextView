@@ -33,6 +33,8 @@ public class MarqueeTextView extends AppCompatTextView {
 
     private Paint paint;
 
+    private Paint.FontMetricsInt metrics;
+
     // 文字X,Y轴的坐标
     private float posX1, posX2, posY;
 
@@ -68,13 +70,18 @@ public class MarqueeTextView extends AppCompatTextView {
     private void init(@Nullable AttributeSet attrs) {
         paint = getPaint();
         handler = new Handler(Looper.getMainLooper());
-
-        TypedArray array = getContext().obtainStyledAttributes(attrs, R.styleable.MarqueeTextView);
-        marginBetween = array.getDimensionPixelSize(R.styleable.MarqueeTextView_marquee_margin_between, MARGIN_BETWEEN);
-        moveStep = array.getInt(R.styleable.MarqueeTextView_marquee_move_step, MOVE_STEP);
-        firstHoldTime = array.getInt(R.styleable.MarqueeTextView_marquee_first_hold_time, FIRST_HOLD_TIME);
-
-        array.recycle();
+        metrics = new Paint.FontMetricsInt();
+        if (attrs != null) {
+            TypedArray array = getContext().obtainStyledAttributes(attrs, R.styleable.MarqueeTextView);
+            marginBetween = array.getDimensionPixelSize(R.styleable.MarqueeTextView_marquee_margin_between, MARGIN_BETWEEN);
+            moveStep = array.getInt(R.styleable.MarqueeTextView_marquee_move_step, MOVE_STEP);
+            firstHoldTime = array.getInt(R.styleable.MarqueeTextView_marquee_first_hold_time, FIRST_HOLD_TIME);
+            array.recycle();
+        } else {
+            marginBetween = MARGIN_BETWEEN;
+            moveStep = MOVE_STEP;
+            firstHoldTime = FIRST_HOLD_TIME;
+        }
     }
 
     @Override
@@ -86,12 +93,11 @@ public class MarqueeTextView extends AppCompatTextView {
         textWidth = (int) paint.measureText(text);
         viewWidth = getWidth();
 
+        // 移除所有消息
         handler.removeCallbacksAndMessages(null);
-
 
         // 初始化是否需要滚动(文字的宽度大于控件的宽度，则需要滚动)
         boolean marquee = textWidth > viewWidth;
-        Paint.FontMetricsInt metrics = new Paint.FontMetricsInt();
         paint.getFontMetricsInt(metrics);
         posY = Math.abs(metrics.top) + getPaddingTop();
         if (marquee) {
