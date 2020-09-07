@@ -1,0 +1,2 @@
+include ':Library', ':App'
+rootProject.name='CustomWidgets'

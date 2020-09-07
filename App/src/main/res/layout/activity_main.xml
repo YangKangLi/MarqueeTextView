@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.github.yangkangli.marquee_text_view.MarqueeTextView
+        android:id="@+id/tv_marquee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF0"
+        android:lines="1"
+        android:text="默认的文本"
+        android:textColor="#F00"
+        android:textSize="14sp"
+        app:marquee_first_hold_time="1500"
+        app:marquee_margin_between="100dp"
+        app:marquee_move_step="9" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="setLongText1"
+        android:text="set Long Text1" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="setLongText2"
+        android:text="set Long Text2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="setShortText1"
+        android:text="set Short Text1" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="setShortText2"
+        android:text="set Short Text2" />
+
+</LinearLayout>

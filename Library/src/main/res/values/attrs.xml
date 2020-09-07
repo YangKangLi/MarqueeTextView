@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MarqueeTextView">
+        <!-- 中间的间隙 -->
+        <attr name="marquee_margin_between" format="dimension" />
+        <!-- 每次移动的横跨长度，可用于控制速度 -->
+        <attr name="marquee_move_step" format="integer" />
+        <!-- 第一次绘制时停留的时间（单位毫秒） -->
+        <attr name="marquee_first_hold_time" format="integer" />
+    </declare-styleable>
+</resources>
