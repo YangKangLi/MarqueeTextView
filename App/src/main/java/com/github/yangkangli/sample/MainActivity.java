@@ -19,18 +19,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setLongText1(View view) {
-        tvMarquee.setText("得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了得游上线了");
+        tvMarquee.setText("这是很长的文本1这是很长的文本1这是很长的文本1这是很长的文本1这是很长的文本1这是很长的文本1这是很长的文本1这是很长的文本1这是很长的文本1这是很长的文本1");
     }
 
     public void setLongText2(View view) {
-        tvMarquee.setText("我的App上线了我的App上线了我的App上线了我的App上线了我的App上线了我的App上线了我的App上线了我的App上线了我的App上线了我的App上线了我的App上线了我的App上线了");
+        tvMarquee.setText("这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2这是很长的文本2");
     }
 
     public void setShortText1(View view) {
-        tvMarquee.setText("得游上线了11111");
+        tvMarquee.setText("这是很端的文本1");
     }
 
     public void setShortText2(View view) {
-        tvMarquee.setText("得游上线了2222");
+        tvMarquee.setText("这是很端的文本2");
     }
 }
