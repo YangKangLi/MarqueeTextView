@@ -42,7 +42,9 @@ Step 3. Use MarqueeTextView Widget like :
         app:marquee_margin_between="100dp"
         app:marquee_move_step="5" />
 ```
-There are 3 arrtrbutes here:
+There are 3 attributes here:
 1) marquee_first_hold_time (unit:millisecond) : text will hold for a while before scrooll
-2) marquee_margin_between: space between tail and head
-3) marquee_move_step: The distance moved each time
+2) marquee_margin_between: space's width between tail and head
+3) marquee_move_step: the distance moved each time
+
+And you should define 'android:lines="1"' also.
